@@ -1,0 +1,20 @@
+<%- include ('./partials/header.ejs') %>
+<body>
+<%- include ('./partials/navbar.ejs') %>      
+    <div class ="container">
+        <div class="card">
+            <div class="card-header">
+                <h1>Cadastro de Nomes</h1>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="/cadastrado">
+                    <input type="text" placeholder="Digite Novo Nome" class="formcontrol" name="nome">
+                    <button class="btn btn-primary">Cadastrar</button>
+                </form>
+                <hr> 
+            </div>
+        </div>
+       
+<%- include ('./partials/footer.ejs') %>        
+
+</body>
